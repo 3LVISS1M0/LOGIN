@@ -1,0 +1,24 @@
+body{
+    background-color: darkgrey;
+
+}
+.box {
+  width: 300px;          /* square width */
+  height: 300px;         /* square height (same as width = square) */
+  display: flex;         /* flexbox helps centering */
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  text-align: center; 
+}
+
+.wrapper{
+    margin-top: 80px;
+    padding: 10px;
+    width: 500px;
+    color: white; 
+    display: flex;
+    background-color: rgb(86, 84, 84);
+    border-radius: 8px;
+    justify-content: center;
+    height: fit-content;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Login</title>
+</head>
+<link rel="stylesheet" href="script.css">
+<body>
+    
+        <div class="wrapper">
+            <div class="box">
+                <h2>Login</h2>
+ <form method="POST">
+        <label>Account Number:</label><br>
+        <input type="text" name="account_number" required><br><br>
+        <input type="submit" value="Login">
+    </form>
+</div> 
+</div>
+
+    <p>Don't have an account? <a href="{{ url_for('register') }}">Register here</a></p>
+</body>
+</html>
