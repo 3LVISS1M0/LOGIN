@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: #009876;
+        }
+    </style>
+</head>
+<body>
+    <p>Dashboard</p>
+    <h3>Good afternoon, <span id="username"></span></h3>
+</body>
+<script>
+    let username = document.getElementById("username")
+    function RetriveToken(){
+        try{
+            let entrykey = localStorage.getItem("authtoken");
+            let userData = JSON.parse(localStorage.getItem("user"));
+            username.innerHTML = userData.name;
+            if(!entrykey){
+                window.location.href = "login2.html";
+            }
+        }
+        catch(err){
+            console.log(err);
+        }
+    }
+    window.onload = () => {
+        RetriveToken()
+    }
+</script>
+</html>
